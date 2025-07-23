@@ -1,5 +1,5 @@
 # Repertoire-Extractor
-Python script to extract repertoire files from a player's game database.  Adds play percentages that can be read by the platform Noctie.ai so if you upload the resulting repertoire to Noctie and play against it, it will make different moves at roughtly the same frequency as the player.
+Python script to extract repertoire files from a player's game database.  Adds play percentages that can be read by the platform Noctie.ai so if you upload the resulting repertoire to Noctie and play against it, it will make different moves at roughtly the same frequency as the player.  Then when it exists the repertoire it plays on its own.
 
 # Opening Repertoire Extractor - User Instructions
 
