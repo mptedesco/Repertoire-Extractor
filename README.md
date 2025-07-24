@@ -131,18 +131,14 @@ This shows:
 ## Using the Output
 
 ### Compatible Software
-The output PGN can be opened in:
-- **ChessBase** - Shows as an interactive opening tree
-- **Lichess Study** - Import as a study for online analysis
-- **Chess.com Analysis** - Use the PGN import feature
-- **SCID** - Displays the complete variation tree
-- **Any PGN viewer** - Basic text viewing of moves and comments
+The output PGN can be opened in anything that reads a PGN file - in particular, it can be loaded into Noctie.ai as a repertoire and Noctie will play moves based on the frequency of play.
+Can be loaded into any PGN reader or program.
 
 ### Best Practices
-1. **Start with moderate depth** (10-15 moves) to avoid overwhelming detail
+1. **Start with moderate depth** (10-20 moves (ply)) to avoid overwhelming detail
 2. **Analyze both colors** separately for complete repertoire coverage
 3. **Regular updates** - Re-run analysis as you play more games
-4. **Focus on high-frequency lines** for practical repertoire decisions
+4. **Focus on high-frequency lines** for practical repertoire decisions and to avoid practicing against improbable moves
 
 ## Troubleshooting
 
@@ -173,13 +169,6 @@ The output PGN can be opened in:
 - **Complete Games**: Games should have move sequences, not just headers
 - **Encoding**: UTF-8 encoding recommended for international characters
 
-## Advanced Usage Tips
-
-### Optimizing Depth
-- **Tactical players**: Use 12-15 moves to capture complete opening ideas
-- **Positional players**: 8-12 moves often sufficient for strategic understanding
-- **Endgame specialists**: Lower depth (6-10) focuses on fundamental opening principles
-
 ### Player Name Matching
 - The program uses partial matching, so "Carlsen" will match "Carlsen, Magnus"
 - Check the console output to see what player was auto-detected
@@ -206,13 +195,5 @@ The output PGN can be opened in:
 - Does not analyze position quality or theoretical soundness
 - Cannot detect transpositions between different move orders
 - Statistics reflect your specific game database, not universal chess knowledge
-
-## Getting Help
-
-If you encounter issues:
-1. Check that all requirements are properly installed
-2. Verify your PGN file is in standard format
-3. Try with a smaller sample file first
-4. Review the console output for specific error messages
 
 The program provides detailed console feedback during processing, which can help identify specific issues with your PGN file or command syntax.
