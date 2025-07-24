@@ -134,51 +134,6 @@ This shows:
 The output PGN can be opened in anything that reads a PGN file - in particular, it can be loaded into Noctie.ai as a repertoire and Noctie will play moves based on the frequency of play.
 Can be loaded into any PGN reader or program.
 
-### Best Practices
-1. **Start with moderate depth** (10-20 moves (ply)) to avoid overwhelming detail
-2. **Analyze both colors** separately for complete repertoire coverage
-3. **Regular updates** - Re-run analysis as you play more games
-4. **Focus on high-frequency lines** for practical repertoire decisions and to avoid practicing against improbable moves
-
-## Troubleshooting
-
-### Common Issues
-
-**"No games found for player X playing as color Y"**
-- Check that the player name matches exactly (including punctuation)
-- Verify the PGN contains games with that player in the specified color
-- Try running without `--player` to see auto-detected names
-
-**"Could not parse move 'X'"**
-- Some PGN files have non-standard notation
-- The program will skip problematic moves and continue
-- Check if your PGN file follows standard format
-
-**"ModuleNotFoundError: No module named 'chess'"**
-- Install the required package: `pip install python-chess`
-- Make sure you're using the correct Python environment
-
-**Empty or minimal output**
-- Increase the `--depth` parameter if games are very short
-- Check that your PGN file contains complete games, not just fragments
-- Verify the games have move notation, not just results
-
-### File Format Requirements
-- **PGN Standard**: File must be in standard PGN format
-- **Player Names**: Must be consistent throughout the file
-- **Complete Games**: Games should have move sequences, not just headers
-- **Encoding**: UTF-8 encoding recommended for international characters
-
-### Player Name Matching
-- The program uses partial matching, so "Carlsen" will match "Carlsen, Magnus"
-- Check the console output to see what player was auto-detected
-- Use exact spelling for `--player` parameter if auto-detection fails
-
-### Large Databases
-- For files with thousands of games, processing may take several minutes
-- The program provides progress updates in the console
-- Consider filtering your PGN to relevant time periods or rating ranges
-
 ## Technical Notes
 
 ### Performance
